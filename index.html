@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skate board school</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- header section -->
+    <header>
+        <img src="src/logo.png" alt="skating logo" class="logo">
+        <nav>
+            <ul class="navbar">
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">skating</a></li>
+                <li><a href="#">shop</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+            <a onclick=showsidebar()  class="menu" href="#"><i class="fa-solid fa-bars"></i></a>
+            <ul class="sidebar">
+                <li  onclick=closesidebar()><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">skating</a></li>
+                <li><a href="#">shop</a></li>
+                <li ><a  href="#">contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- landing section -->
+        <section class="landing-section">
+            <div class="land-content">
+                <img src="src/top_icon.png" alt="top-icon">
+                <h1>Skating Board School</h1>
+            </div>
+            <div class="land-img">
+                <img src="src/banner_img.png" alt="landing-img">
+            </div>
+        </section>
+        <!-- our skating class section -->
+         <section class="skat-class">
+            <h1>Our Skating class</h1>
+            <p>There are many variation of passages of Lorem</p>
+            <div class="skat-box">
+                <div class="more-link">
+                <div class="class-box">
+                    <img src="src/class1.png" alt="skating-img">
+                    <h2>Skateboard</h2>
+                    <p>there are many variations of passage of lorem lpsum 
+                        available, but the majority have
+                        suffered alterationthere are many variations
+                    </p>
+                </div>
+                <h4>read more</h4>
+                </div>
+                <div class="more-link">
+                <div class="class-box" id="class-2">
+                    <img src="src/class2.png" alt="skating-img" >
+                    <h2>Skateboard</h2>
+                    <p>there are many variations of passage of lorem lpsum 
+                        available, but the majority have
+                        suffered alterationthere are many variations
+                    </p>
+                </div>
+                <h4>read more</h4>
+            </div>
+                <div class="more-link">
+                <div class="class-box">
+                    <img src="src/class3.png" alt="skating-img">
+                    <h2>Skateboard</h2>
+                    <p>there are many variations of passage of lorem lpsum 
+                        available, but the majority have
+                        suffered alterationthere are many variations
+                    </p>
+                </div>
+                <h4>read more</h4>
+            </div>
+            </div>
+         </section>
+         <!-- about section -->
+          <section class="about-container">
+            <div class="about-content">
+                <h1>About <br> Skating<br>School</h1>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration There are many
+                    variatioThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration There are many variationsns</p>
+            </div>
+            <div class="about-image">
+                <img src="src/about.png" alt="skate-about">
+            </div>
+        </section>
+        <script>
+            function showsidebar(){
+                const sidebar=document.querySelector('.sidebar')
+                sidebar.style.display= 'flex'
+            }
+            function closesidebar(){
+                const sidebar=document.querySelector('.sidebar')
+                sidebar.style.display= 'none'
+            }
+        </script>
+</body>
+</html>
